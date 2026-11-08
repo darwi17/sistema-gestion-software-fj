@@ -1,0 +1,280 @@
+2026-11-06 23:30:17,573 - INFO - ========== INICIO DE LA SIMULACIÓN ==========
+2026-11-06 23:30:17,574 - INFO - Iniciando procesamiento de la reserva R001.
+2026-11-06 23:30:17,575 - INFO - Reserva R001 confirmada. Duración: 3. Costo: $153.00.
+2026-11-06 23:30:17,577 - INFO - Operación 1 completada correctamente.
+2026-11-06 23:30:17,579 - WARNING - Operación 2 fallida de forma controlada: Correo electrónico inválido: 'correo-sin-arroba.com'.
+2026-11-06 23:30:17,579 - INFO - Iniciando procesamiento de la reserva R003.
+2026-11-06 23:30:17,579 - INFO - Reserva R003 confirmada. Duración: 5. Costo: $731.85.
+2026-11-06 23:30:17,580 - INFO - Operación 3 completada correctamente.
+2026-11-06 23:30:17,581 - INFO - Iniciando procesamiento de la reserva R004.
+2026-11-06 23:30:17,581 - ERROR - Error de validación en reserva R004.
+Traceback (most recent call last):
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 301, in procesar_reserva
+    self.costo_final = self.servicio.calcular_costo(*args, **kwargs)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 217, in calcular_costo
+    validar_entero(dias, "Los días de alquiler")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 61, in validar_entero
+    raise DatoInvalidoError(f"{nombre} debe ser como mínimo {minimo}.")
+DatoInvalidoError: Los días de alquiler debe ser como mínimo 1.
+2026-11-06 23:30:17,988 - WARNING - Operación 4 fallida de forma controlada: No fue posible procesar la reserva R004.
+2026-11-06 23:30:17,989 - INFO - Iniciando procesamiento de la reserva R005.
+2026-11-06 23:30:17,989 - INFO - Reserva R005 confirmada. Duración: 2. Costo: $650.00.
+2026-11-06 23:30:17,989 - INFO - Operación 5 completada correctamente.
+2026-11-06 23:30:17,989 - WARNING - Operación 6 fallida de forma controlada: El teléfono debe contener entre 7 y 15 dígitos, sin letras.
+2026-11-06 23:30:17,989 - INFO - Reserva R001 cancelada correctamente.
+2026-11-06 23:30:17,990 - INFO - Operación 7 completada correctamente.
+2026-11-06 23:30:17,990 - WARNING - Operación 8 fallida de forma controlada: El costo base no puede ser menor que 0.
+2026-11-06 23:30:17,991 - INFO - Iniciando procesamiento de la reserva R009.
+2026-11-06 23:30:17,992 - INFO - Reserva R009 confirmada. Duración: 4. Costo: $600.00.
+2026-11-06 23:30:17,992 - INFO - Operación 9 completada correctamente.
+2026-11-06 23:30:17,992 - ERROR - No se pudo cancelar la reserva R001.
+Traceback (most recent call last):
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 331, in cancelar_reserva
+    raise ReservaIncorrectaError(
+        f"La reserva {self.id_reserva} ya estaba cancelada."
+    )
+ReservaIncorrectaError: La reserva R001 ya estaba cancelada.
+2026-11-06 23:30:17,994 - WARNING - Operación 10 fallida de forma controlada: La reserva R001 ya estaba cancelada.
+2026-11-06 23:30:18,002 - INFO - ========== FIN DE LA SIMULACIÓN: 5 correctas, 5 errores controlados ==========
+2026-11-07 00:08:24,525 - INFO - ========== INICIO DE LA SIMULACIÓN ==========
+2026-11-07 00:08:24,527 - INFO - Iniciando procesamiento de la reserva R001.
+2026-11-07 00:08:24,527 - INFO - Reserva R001 confirmada. Duración: 3. Costo: $153.00.
+2026-11-07 00:08:24,527 - INFO - Operación 1 completada correctamente.
+2026-11-07 00:08:24,528 - WARNING - Operación 2 fallida de forma controlada: Correo electrónico inválido: 'correo-sin-arroba.com'.
+2026-11-07 00:08:24,528 - INFO - Iniciando procesamiento de la reserva R003.
+2026-11-07 00:08:24,528 - INFO - Reserva R003 confirmada. Duración: 5. Costo: $731.85.
+2026-11-07 00:08:24,529 - INFO - Operación 3 completada correctamente.
+2026-11-07 00:08:24,529 - INFO - Iniciando procesamiento de la reserva R004.
+2026-11-07 00:08:24,529 - ERROR - Error de validación en reserva R004.
+Traceback (most recent call last):
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 301, in procesar_reserva
+    self.costo_final = self.servicio.calcular_costo(*args, **kwargs)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 217, in calcular_costo
+    validar_entero(dias, "Los días de alquiler")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 61, in validar_entero
+    raise DatoInvalidoError(f"{nombre} debe ser como mínimo {minimo}.")
+DatoInvalidoError: Los días de alquiler debe ser como mínimo 1.
+2026-11-07 00:08:24,702 - WARNING - Operación 4 fallida de forma controlada: No fue posible procesar la reserva R004.
+2026-11-07 00:08:24,703 - INFO - Iniciando procesamiento de la reserva R005.
+2026-11-07 00:08:24,703 - INFO - Reserva R005 confirmada. Duración: 2. Costo: $650.00.
+2026-11-07 00:08:24,703 - INFO - Operación 5 completada correctamente.
+2026-11-07 00:08:24,703 - WARNING - Operación 6 fallida de forma controlada: El teléfono debe contener entre 7 y 15 dígitos, sin letras.
+2026-11-07 00:08:24,704 - INFO - Reserva R001 cancelada correctamente.
+2026-11-07 00:08:24,704 - INFO - Operación 7 completada correctamente.
+2026-11-07 00:08:24,704 - WARNING - Operación 8 fallida de forma controlada: El costo base no puede ser menor que 0.
+2026-11-07 00:08:24,705 - INFO - Iniciando procesamiento de la reserva R009.
+2026-11-07 00:08:24,705 - INFO - Reserva R009 confirmada. Duración: 4. Costo: $600.00.
+2026-11-07 00:08:24,705 - INFO - Operación 9 completada correctamente.
+2026-11-07 00:08:24,706 - ERROR - No se pudo cancelar la reserva R001.
+Traceback (most recent call last):
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 331, in cancelar_reserva
+    raise ReservaIncorrectaError(
+        f"La reserva {self.id_reserva} ya estaba cancelada."
+    )
+ReservaIncorrectaError: La reserva R001 ya estaba cancelada.
+2026-11-07 00:08:24,707 - WARNING - Operación 10 fallida de forma controlada: La reserva R001 ya estaba cancelada.
+2026-11-07 00:08:24,712 - INFO - ========== FIN DE LA SIMULACIÓN: 5 correctas, 5 errores controlados ==========
+2026-11-07 00:09:17,878 - INFO - ========== INICIO DE LA SIMULACIÓN ==========
+2026-11-07 00:09:17,879 - INFO - Iniciando procesamiento de la reserva R001.
+2026-11-07 00:09:17,879 - INFO - Reserva R001 confirmada. Duración: 3. Costo: $153.00.
+2026-11-07 00:09:17,879 - INFO - Operación 1 completada correctamente.
+2026-11-07 00:09:17,880 - WARNING - Operación 2 fallida de forma controlada: Correo electrónico inválido: 'correo-sin-arroba.com'.
+2026-11-07 00:09:17,880 - INFO - Iniciando procesamiento de la reserva R003.
+2026-11-07 00:09:17,880 - INFO - Reserva R003 confirmada. Duración: 5. Costo: $731.85.
+2026-11-07 00:09:17,880 - INFO - Operación 3 completada correctamente.
+2026-11-07 00:09:17,881 - INFO - Iniciando procesamiento de la reserva R004.
+2026-11-07 00:09:17,881 - ERROR - Error de validación en reserva R004.
+Traceback (most recent call last):
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 301, in procesar_reserva
+    self.costo_final = self.servicio.calcular_costo(*args, **kwargs)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 217, in calcular_costo
+    validar_entero(dias, "Los días de alquiler")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 61, in validar_entero
+    raise DatoInvalidoError(f"{nombre} debe ser como mínimo {minimo}.")
+DatoInvalidoError: Los días de alquiler debe ser como mínimo 1.
+2026-11-07 00:09:17,921 - WARNING - Operación 4 fallida de forma controlada: No fue posible procesar la reserva R004.
+2026-11-07 00:09:17,921 - INFO - Iniciando procesamiento de la reserva R005.
+2026-11-07 00:09:17,921 - INFO - Reserva R005 confirmada. Duración: 2. Costo: $650.00.
+2026-11-07 00:09:17,922 - INFO - Operación 5 completada correctamente.
+2026-11-07 00:09:17,922 - WARNING - Operación 6 fallida de forma controlada: El teléfono debe contener entre 7 y 15 dígitos, sin letras.
+2026-11-07 00:09:17,922 - INFO - Reserva R001 cancelada correctamente.
+2026-11-07 00:09:17,923 - INFO - Operación 7 completada correctamente.
+2026-11-07 00:09:17,923 - WARNING - Operación 8 fallida de forma controlada: El costo base no puede ser menor que 0.
+2026-11-07 00:09:17,923 - INFO - Iniciando procesamiento de la reserva R009.
+2026-11-07 00:09:17,923 - INFO - Reserva R009 confirmada. Duración: 4. Costo: $600.00.
+2026-11-07 00:09:17,924 - INFO - Operación 9 completada correctamente.
+2026-11-07 00:09:17,924 - ERROR - No se pudo cancelar la reserva R001.
+Traceback (most recent call last):
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 331, in cancelar_reserva
+    raise ReservaIncorrectaError(
+        f"La reserva {self.id_reserva} ya estaba cancelada."
+    )
+ReservaIncorrectaError: La reserva R001 ya estaba cancelada.
+2026-11-07 00:09:17,924 - WARNING - Operación 10 fallida de forma controlada: La reserva R001 ya estaba cancelada.
+2026-11-07 00:09:17,926 - INFO - ========== FIN DE LA SIMULACIÓN: 5 correctas, 5 errores controlados ==========
+2026-11-07 00:09:21,836 - INFO - ========== INICIO DE LA SIMULACIÓN ==========
+2026-11-07 00:09:21,837 - INFO - Iniciando procesamiento de la reserva R001.
+2026-11-07 00:09:21,837 - INFO - Reserva R001 confirmada. Duración: 3. Costo: $153.00.
+2026-11-07 00:09:21,837 - INFO - Operación 1 completada correctamente.
+2026-11-07 00:09:21,838 - WARNING - Operación 2 fallida de forma controlada: Correo electrónico inválido: 'correo-sin-arroba.com'.
+2026-11-07 00:09:21,838 - INFO - Iniciando procesamiento de la reserva R003.
+2026-11-07 00:09:21,838 - INFO - Reserva R003 confirmada. Duración: 5. Costo: $731.85.
+2026-11-07 00:09:21,838 - INFO - Operación 3 completada correctamente.
+2026-11-07 00:09:21,839 - INFO - Iniciando procesamiento de la reserva R004.
+2026-11-07 00:09:21,839 - ERROR - Error de validación en reserva R004.
+Traceback (most recent call last):
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 301, in procesar_reserva
+    self.costo_final = self.servicio.calcular_costo(*args, **kwargs)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 217, in calcular_costo
+    validar_entero(dias, "Los días de alquiler")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 61, in validar_entero
+    raise DatoInvalidoError(f"{nombre} debe ser como mínimo {minimo}.")
+DatoInvalidoError: Los días de alquiler debe ser como mínimo 1.
+2026-11-07 00:09:21,877 - WARNING - Operación 4 fallida de forma controlada: No fue posible procesar la reserva R004.
+2026-11-07 00:09:21,877 - INFO - Iniciando procesamiento de la reserva R005.
+2026-11-07 00:09:21,877 - INFO - Reserva R005 confirmada. Duración: 2. Costo: $650.00.
+2026-11-07 00:09:21,877 - INFO - Operación 5 completada correctamente.
+2026-11-07 00:09:21,878 - WARNING - Operación 6 fallida de forma controlada: El teléfono debe contener entre 7 y 15 dígitos, sin letras.
+2026-11-07 00:09:21,878 - INFO - Reserva R001 cancelada correctamente.
+2026-11-07 00:09:21,878 - INFO - Operación 7 completada correctamente.
+2026-11-07 00:09:21,878 - WARNING - Operación 8 fallida de forma controlada: El costo base no puede ser menor que 0.
+2026-11-07 00:09:21,879 - INFO - Iniciando procesamiento de la reserva R009.
+2026-11-07 00:09:21,879 - INFO - Reserva R009 confirmada. Duración: 4. Costo: $600.00.
+2026-11-07 00:09:21,879 - INFO - Operación 9 completada correctamente.
+2026-11-07 00:09:21,879 - ERROR - No se pudo cancelar la reserva R001.
+Traceback (most recent call last):
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 331, in cancelar_reserva
+    raise ReservaIncorrectaError(
+        f"La reserva {self.id_reserva} ya estaba cancelada."
+    )
+ReservaIncorrectaError: La reserva R001 ya estaba cancelada.
+2026-11-07 00:09:21,880 - WARNING - Operación 10 fallida de forma controlada: La reserva R001 ya estaba cancelada.
+2026-11-07 00:09:21,881 - INFO - ========== FIN DE LA SIMULACIÓN: 5 correctas, 5 errores controlados ==========
+2026-11-07 00:09:27,504 - INFO - ========== INICIO DE LA SIMULACIÓN ==========
+2026-11-07 00:09:27,505 - INFO - Iniciando procesamiento de la reserva R001.
+2026-11-07 00:09:27,505 - INFO - Reserva R001 confirmada. Duración: 3. Costo: $153.00.
+2026-11-07 00:09:27,505 - INFO - Operación 1 completada correctamente.
+2026-11-07 00:09:27,506 - WARNING - Operación 2 fallida de forma controlada: Correo electrónico inválido: 'correo-sin-arroba.com'.
+2026-11-07 00:09:27,506 - INFO - Iniciando procesamiento de la reserva R003.
+2026-11-07 00:09:27,506 - INFO - Reserva R003 confirmada. Duración: 5. Costo: $731.85.
+2026-11-07 00:09:27,507 - INFO - Operación 3 completada correctamente.
+2026-11-07 00:09:27,507 - INFO - Iniciando procesamiento de la reserva R004.
+2026-11-07 00:09:27,507 - ERROR - Error de validación en reserva R004.
+Traceback (most recent call last):
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 301, in procesar_reserva
+    self.costo_final = self.servicio.calcular_costo(*args, **kwargs)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 217, in calcular_costo
+    validar_entero(dias, "Los días de alquiler")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 61, in validar_entero
+    raise DatoInvalidoError(f"{nombre} debe ser como mínimo {minimo}.")
+DatoInvalidoError: Los días de alquiler debe ser como mínimo 1.
+2026-11-07 00:09:27,552 - WARNING - Operación 4 fallida de forma controlada: No fue posible procesar la reserva R004.
+2026-11-07 00:09:27,552 - INFO - Iniciando procesamiento de la reserva R005.
+2026-11-07 00:09:27,552 - INFO - Reserva R005 confirmada. Duración: 2. Costo: $650.00.
+2026-11-07 00:09:27,552 - INFO - Operación 5 completada correctamente.
+2026-11-07 00:09:27,553 - WARNING - Operación 6 fallida de forma controlada: El teléfono debe contener entre 7 y 15 dígitos, sin letras.
+2026-11-07 00:09:27,553 - INFO - Reserva R001 cancelada correctamente.
+2026-11-07 00:09:27,554 - INFO - Operación 7 completada correctamente.
+2026-11-07 00:09:27,554 - WARNING - Operación 8 fallida de forma controlada: El costo base no puede ser menor que 0.
+2026-11-07 00:09:27,554 - INFO - Iniciando procesamiento de la reserva R009.
+2026-11-07 00:09:27,554 - INFO - Reserva R009 confirmada. Duración: 4. Costo: $600.00.
+2026-11-07 00:09:27,555 - INFO - Operación 9 completada correctamente.
+2026-11-07 00:09:27,555 - ERROR - No se pudo cancelar la reserva R001.
+Traceback (most recent call last):
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 331, in cancelar_reserva
+    raise ReservaIncorrectaError(
+        f"La reserva {self.id_reserva} ya estaba cancelada."
+    )
+ReservaIncorrectaError: La reserva R001 ya estaba cancelada.
+2026-11-07 00:09:27,556 - WARNING - Operación 10 fallida de forma controlada: La reserva R001 ya estaba cancelada.
+2026-11-07 00:09:27,557 - INFO - ========== FIN DE LA SIMULACIÓN: 5 correctas, 5 errores controlados ==========
+2026-11-07 00:09:34,505 - INFO - ========== INICIO DE LA SIMULACIÓN ==========
+2026-11-07 00:09:34,509 - INFO - Iniciando procesamiento de la reserva R001.
+2026-11-07 00:09:34,509 - INFO - Reserva R001 confirmada. Duración: 3. Costo: $153.00.
+2026-11-07 00:09:34,516 - INFO - Operación 1 completada correctamente.
+2026-11-07 00:09:34,520 - WARNING - Operación 2 fallida de forma controlada: Correo electrónico inválido: 'correo-sin-arroba.com'.
+2026-11-07 00:09:34,531 - INFO - Iniciando procesamiento de la reserva R003.
+2026-11-07 00:09:34,531 - INFO - Reserva R003 confirmada. Duración: 5. Costo: $731.85.
+2026-11-07 00:09:34,535 - INFO - Operación 3 completada correctamente.
+2026-11-07 00:09:34,538 - INFO - Iniciando procesamiento de la reserva R004.
+2026-11-07 00:09:34,538 - ERROR - Error de validación en reserva R004.
+Traceback (most recent call last):
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 301, in procesar_reserva
+    self.costo_final = self.servicio.calcular_costo(*args, **kwargs)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 217, in calcular_costo
+    validar_entero(dias, "Los días de alquiler")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 61, in validar_entero
+    raise DatoInvalidoError(f"{nombre} debe ser como mínimo {minimo}.")
+DatoInvalidoError: Los días de alquiler debe ser como mínimo 1.
+2026-11-07 00:09:34,645 - WARNING - Operación 4 fallida de forma controlada: No fue posible procesar la reserva R004.
+2026-11-07 00:09:34,648 - INFO - Iniciando procesamiento de la reserva R005.
+2026-11-07 00:09:34,649 - INFO - Reserva R005 confirmada. Duración: 2. Costo: $650.00.
+2026-11-07 00:09:34,655 - INFO - Operación 5 completada correctamente.
+2026-11-07 00:09:34,656 - WARNING - Operación 6 fallida de forma controlada: El teléfono debe contener entre 7 y 15 dígitos, sin letras.
+2026-11-07 00:09:34,659 - INFO - Reserva R001 cancelada correctamente.
+2026-11-07 00:09:34,664 - INFO - Operación 7 completada correctamente.
+2026-11-07 00:09:34,666 - WARNING - Operación 8 fallida de forma controlada: El costo base no puede ser menor que 0.
+2026-11-07 00:09:34,666 - INFO - Iniciando procesamiento de la reserva R009.
+2026-11-07 00:09:34,667 - INFO - Reserva R009 confirmada. Duración: 4. Costo: $600.00.
+2026-11-07 00:09:34,667 - INFO - Operación 9 completada correctamente.
+2026-11-07 00:09:34,668 - ERROR - No se pudo cancelar la reserva R001.
+Traceback (most recent call last):
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 331, in cancelar_reserva
+    raise ReservaIncorrectaError(
+        f"La reserva {self.id_reserva} ya estaba cancelada."
+    )
+ReservaIncorrectaError: La reserva R001 ya estaba cancelada.
+2026-11-07 00:09:34,669 - WARNING - Operación 10 fallida de forma controlada: La reserva R001 ya estaba cancelada.
+2026-11-07 00:09:34,672 - INFO - ========== FIN DE LA SIMULACIÓN: 5 correctas, 5 errores controlados ==========
+2026-11-07 00:09:42,088 - INFO - ========== INICIO DE LA SIMULACIÓN ==========
+2026-11-07 00:09:42,089 - INFO - Iniciando procesamiento de la reserva R001.
+2026-11-07 00:09:42,089 - INFO - Reserva R001 confirmada. Duración: 3. Costo: $153.00.
+2026-11-07 00:09:42,090 - INFO - Operación 1 completada correctamente.
+2026-11-07 00:09:42,090 - WARNING - Operación 2 fallida de forma controlada: Correo electrónico inválido: 'correo-sin-arroba.com'.
+2026-11-07 00:09:42,090 - INFO - Iniciando procesamiento de la reserva R003.
+2026-11-07 00:09:42,090 - INFO - Reserva R003 confirmada. Duración: 5. Costo: $731.85.
+2026-11-07 00:09:42,091 - INFO - Operación 3 completada correctamente.
+2026-11-07 00:09:42,091 - INFO - Iniciando procesamiento de la reserva R004.
+2026-11-07 00:09:42,091 - ERROR - Error de validación en reserva R004.
+Traceback (most recent call last):
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 301, in procesar_reserva
+    self.costo_final = self.servicio.calcular_costo(*args, **kwargs)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 217, in calcular_costo
+    validar_entero(dias, "Los días de alquiler")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 61, in validar_entero
+    raise DatoInvalidoError(f"{nombre} debe ser como mínimo {minimo}.")
+DatoInvalidoError: Los días de alquiler debe ser como mínimo 1.
+2026-11-07 00:09:42,131 - WARNING - Operación 4 fallida de forma controlada: No fue posible procesar la reserva R004.
+2026-11-07 00:09:42,131 - INFO - Iniciando procesamiento de la reserva R005.
+2026-11-07 00:09:42,131 - INFO - Reserva R005 confirmada. Duración: 2. Costo: $650.00.
+2026-11-07 00:09:42,131 - INFO - Operación 5 completada correctamente.
+2026-11-07 00:09:42,132 - WARNING - Operación 6 fallida de forma controlada: El teléfono debe contener entre 7 y 15 dígitos, sin letras.
+2026-11-07 00:09:42,132 - INFO - Reserva R001 cancelada correctamente.
+2026-11-07 00:09:42,132 - INFO - Operación 7 completada correctamente.
+2026-11-07 00:09:42,132 - WARNING - Operación 8 fallida de forma controlada: El costo base no puede ser menor que 0.
+2026-11-07 00:09:42,133 - INFO - Iniciando procesamiento de la reserva R009.
+2026-11-07 00:09:42,133 - INFO - Reserva R009 confirmada. Duración: 4. Costo: $600.00.
+2026-11-07 00:09:42,133 - INFO - Operación 9 completada correctamente.
+2026-11-07 00:09:42,133 - ERROR - No se pudo cancelar la reserva R001.
+Traceback (most recent call last):
+  File "c:\Users\bdarw\Desktop\Programacion\main_software_fj_corregido.py", line 331, in cancelar_reserva
+    raise ReservaIncorrectaError(
+        f"La reserva {self.id_reserva} ya estaba cancelada."
+    )
+ReservaIncorrectaError: La reserva R001 ya estaba cancelada.
+2026-11-07 00:09:42,134 - WARNING - Operación 10 fallida de forma controlada: La reserva R001 ya estaba cancelada.
+2026-11-07 00:09:42,135 - INFO - ========== FIN DE LA SIMULACIÓN: 5 correctas, 5 errores controlados ==========
